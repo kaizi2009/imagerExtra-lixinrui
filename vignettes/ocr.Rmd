@@ -1,10 +1,10 @@
 ---
-title: "Optical Character Recognition with imagerExtra"
+title: "Optical Character Recognition with imagerExtra-lixinrui"
 author: "Shota Ochi"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Optical Character Recognition with imagerExtra}
+  %\VignetteIndexEntry{Optical Character Recognition with imagerExtra-lixinrui}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -28,7 +28,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = FALSE,
 is_available_tesseract <- requireNamespace("tesseract", quietly = TRUE)
 ```
 
-You need the R package tesseract, which is bindings to a powerful optical character recognition (OCR) engine, to do OCR with imagerExtra.
+You need the R package tesseract, which is bindings to a powerful optical character recognition (OCR) engine, to do OCR with imagerExtra-lixinrui.
 
 See the [installation guide of tesseract](https://github.com/ropensci/tesseract#installation) if you haven't installed tesseract.
 
@@ -36,7 +36,7 @@ ocr function of tesseract works best for images with high contrast, little noise
 
 ocr function doesn't show a good performance for degraded images as shown below.
 ```{r, fig.height = 3, eval = is_available_tesseract}
-library(imagerExtra)
+library(imagerExtra-lixinrui)
 plot(papers, main = "Original")
 OCR(papers) %>% print
 OCR_data(papers) %>% print
@@ -57,4 +57,4 @@ OCR_data(hello) %>% print
 
 We can see the text "Hello" was recognized.
 
-Using tesseract in combination with imagerExtra enables us to extract text from degraded images.
+Using tesseract in combination with imagerExtra-lixinrui enables us to extract text from degraded images.

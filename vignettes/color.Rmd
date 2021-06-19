@@ -1,10 +1,10 @@
 ---
-title: "Treating Color Image with imagerExtra"
+title: "Treating Color Image with imagerExtra-lixinrui"
 author: "Shota Ochi"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Treating Color Image with imagerExtra}
+  %\VignetteIndexEntry{Treating Color Image with imagerExtra-lixinrui}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -35,7 +35,7 @@ a <- imfill(300, 300, 3, c(0,0,1)) %>% grayscale()
 res[[3]] <- unique(a)			   
 ```
 
-We have two options when treating color images with imagerExtra.
+We have two options when treating color images with imagerExtra-lixinrui.
 
 * process the channels independently
 * preserve the hue of image, process the intensity component and then compute RGB values from the new intensity component
@@ -45,7 +45,7 @@ The former is straightforward.
 One example is shown below.
 
 ```{r, message = FALSE}
-library(imagerExtra)
+library(imagerExtra-lixinrui)
 x <- boats
 s <- 0.1
 R(x) <- BalanceSimplest(R(x), s, s, range=c(0,1))
