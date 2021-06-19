@@ -1,10 +1,10 @@
 ---
-title: "Getting Started with imagerExtra-lixinrui"
+title: "Getting Started with imagerExtra"
 author: "Shota Ochi"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Getting Started with imagerExtra-lixinrui}
+  %\VignetteIndexEntry{Getting Started with imagerExtra}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -27,29 +27,29 @@ knitr::opts_chunk$set(warning=FALSE, message=FALSE, cache=FALSE,
                comment=NA, verbose=TRUE, fig.width=5, fig.height=5, dev='jpeg',dev.args=list(quality=50))			   
 ```
 
-imagerExtra-lixinrui provides advanced functions for image processing based on the R package imager.
+imagerExtra provides advanced functions for image processing based on the R package imager.
 
-The functions in imagerExtra-lixinrui are classified into 4 groups by their functions.
+The functions in imagerExtra are classified into 4 groups by their functions.
 
 * Contrast Enhancement
 * Segmentation
 * Denoising
 * Others
 
-See below to know what functions imagerExtra-lixinrui provides.
+See below to know what functions imagerExtra provides.
 
 <br />
 
 ## Preparation
 
-Most of the functions in imagerExtra-lixinrui are for grayscale image.
+Most of the functions in imagerExtra are for grayscale image.
 
-See the vignette Treating Color Image with imagerExtra-lixinrui if you want to treat color image with imagerExtra-lixinrui.
+See the vignette Treating Color Image with imagerExtra if you want to treat color image with imagerExtra.
 
 Let's prepare grayscale images.
 
 ```{r, fig.width=5, fig.height=5, message=FALSE}
-library(imagerExtra-lixinrui)
+library(imagerExtra)
 g <- grayscale(boats)
 gd <- grayscale(dogs)
 layout(matrix(1:2,1,2))
@@ -297,12 +297,12 @@ The functions classified as others are
 
 ### Grayscale, GetHue, and RestoreHue
 
-These functions are for treating color image with imagerExtra-lixinrui.
+These functions are for treating color image with imagerExtra.
 
-See the vignette Treating Color Image with imagerExtra-lixinrui for detail.
+See the vignette Treating Color Image with imagerExtra for detail.
 
 ### OCR and OCR_data
 
 These functions are wrappers for ocr function and ocr_data function of the R package tesseract.
 
-See the vignette Optical Character Recognition with imagerExtra-lixinrui for detail.
+See the vignette Optical Character Recognition with imagerExtra for detail.
