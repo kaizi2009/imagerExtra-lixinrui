@@ -1,4 +1,4 @@
-# imagerExtra
+ShotaOchi/imagerExtra# imagerExtra
 
 [![Build Status](https://github.com/ShotaOchi/imagerExtra/workflows/R-CMD-check/badge.svg)](https://github.com/ShotaOchi/imagerExtra/actions)
 [![CRAN Version](https://www.r-pkg.org/badges/version/imagerExtra)](https://cran.r-project.org/package=imagerExtra)
@@ -27,10 +27,8 @@ You can install imagerExtra from CRAN or GitHub.
 
 Run the following R code to install imagerExtra.
 ```r
-# install from CRAN
-install.packages("imagerExtra")
 # install from GitHub
-devtools::install_github("ShotaOchi/imagerExtra")
+devtools::install_github("kaizi2009/imagerExtra-lixinrui")
 ```
 
 ## Optical Character Recognition (OCR)
