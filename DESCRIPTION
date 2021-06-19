@@ -1,4 +1,4 @@
-Package: imagerExtra
+Package: imagerExtra-lixinrui
 Type: Package
 Title: Extra Image Processing Library Based on 'imager'
 Version: 2.0.0
@@ -25,8 +25,8 @@ Suggests:
     rmarkdown,
     tesseract,
     testthat (>= 2.0.0)
-URL: https://github.com/ShotaOchi/imagerExtra
-BugReports: https://github.com/ShotaOchi/imagerExtra/issues
+URL: https://github.com/kaizi2009/imagerExtra-lixinrui
+BugReports: https://github.com/kaizi2009/imagerExtra-lixinrui/issues
 LinkingTo: Rcpp
 LazyData: true
 RoxygenNote: 7.1.1
