@@ -104,8 +104,8 @@ ThresholdTriclass <- function(im, stopval = 0.01, repeatnum, intervalnumber = 10
     {
       indexf <- ordered > thresval
       indexb <- !indexf
-      myu1 <- mean(ordered[indexf])
-      myu0 <- mean(ordered[indexb])
+      myu1 <- sd(ordered[indexf])
+      myu0 <- sd(ordered[indexb])
       ordered <- ordered[ordered >= myu0 & ordered <= myu1]
       if (is.nan(myu0) || is.nan(myu1)) 
       {
